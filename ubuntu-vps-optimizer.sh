@@ -1,5 +1,5 @@
 #!/bin/bash
-# https://github.com/hawshemi/Linux-Optimizer
+# https://github.com/hawshemi/vansh5552211
 
 
 # Green, Yellow & Red Messages.

@@ -1,5 +1,5 @@
 #!/bin/bash
-# https://github.com/hawshemi/vansh5552211
+# https://github.com/vansh5552211/VmOptimizer-by-ErroR404
 
 
 # Green, Yellow & Red Messages.

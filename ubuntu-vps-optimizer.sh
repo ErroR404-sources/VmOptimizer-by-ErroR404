@@ -28,7 +28,7 @@ PROF_PATH="/etc/profile"
 SSH_PORT=""
 SSH_PATH="/etc/ssh/sshd_config"
 SWAP_PATH="/swapfile"
-SWAP_SIZE=2G
+SWAP_SIZE=40G
 
 
 # Root
@@ -246,7 +246,7 @@ swap_maker() {
     sleep 0.5
 
     ## Make Swap
-    sudo fallocate -l $SWAP_SIZE $SWAP_PATH  ## Allocate size
+    sudo fallocate -50G $SWAP_SIZE $SWAP_PATH  ## Allocate size
     sudo chmod 600 $SWAP_PATH                ## Set proper permission
     sudo mkswap $SWAP_PATH                   ## Setup swap         
     sudo swapon $SWAP_PATH                   ## Enable swap
@@ -342,7 +342,7 @@ cat <<EOF >> "$SYS_PATH"
 
 # /etc/sysctl.conf
 # These parameters in this file will be added/updated to the sysctl.conf file.
-# Read More: https://github.com/hawshemi/Linux-Optimizer/blob/main/files/sysctl.conf
+# Read More: https://github.com/VmOptimizer-by-ErroR404
 
 
 ## File system settings
